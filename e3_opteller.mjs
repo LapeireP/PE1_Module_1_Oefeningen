@@ -1,15 +1,20 @@
-// Begin van userInput voorbereiden
-import * as readline from 'node:readline/promises';
-import{stdin as input, stdout as output} from 'node:process';
-const userInput = readline.createInterface({input, output});
-// Einde van userInput voorbereiden
-
-
-
 // Voeg hier je eigen code in
-let som
-let getal1 = parseFloat(await userInput.question('Wat is het eerste getal?'))
-let getal2 = parseFloat(await userInput.question('Wat is het tweede getal?'))
+
+let som;
+let verschil;
+let deling;
+let vermenigvuldiging;
+
+let getal1 = 20;
+let getal2 = 3;
+
 som = getal1 + getal2
-console.log('De som van de twee getallen is ' + som + '.')
+verschil = getal1 - getal2
+deling = getal1 / getal2
+vermenigvuldiging = getal1 * getal2
+
+console.log('De som van 20 en 3 is gelijk aan ' + som + '.')
+console.log('Het verschil van 20 en 3 is gelijk aan ' + verschil + '.')
+console.log('De deling van 20 en 3 is gelijk aan ' + deling + '.')
+console.log('De vermenigvuldiging van 20 en 3 is gelijk aan ' + vermenigvuldiging + '.')
 process.exit();
